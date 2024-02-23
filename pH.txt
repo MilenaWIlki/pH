@@ -1,0 +1,9 @@
+import math
+
+def calculate_pH(H_plus_concentration):
+    return -math.log10(H_plus_concentration)
+
+# Example usage:
+H_plus_concentration = 1e-7  # Concentration of H+ ions in mol/L for pure water at 25°C
+pH_water = calculate_pH(H_plus_concentration)
+print("pH of water at 25°C:", pH_water)
